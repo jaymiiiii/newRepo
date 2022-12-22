@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- METADATA!!! -->
+        <link href="/../public/stylesheet.css"  rel="stylesheet"  type="text/css">
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80Sq5VgZtc_odG1pXOZkJfiWiPm3dsW1kDA&usqp=CAU">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zen+Dots">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script>
+        $(document).scroll(function(){
+          var y = $(this).scrollTop();
+          console.log(y)
+					if (y > 300) {
+            $('#twitterContainer').fadeIn(1000);
+            $('#instagramContainer').fadeIn(1000);
+          }
+          else if (y > 100) {
+            $('#googleContainer').fadeIn(1000);
+            $('#youtubeContainer').fadeIn(1000);
+          }
+        });
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#twitterContainer").hover(function(){
+                $(this).css("background-color", "rgb(189,205,182)");
+                }, function(){
+                $(this).css("background-color", "#a4b98c");
+              });
+              $("#instagramContainer").hover(function(){
+                $(this).css("background-color", "rgb(189,205,182)");
+                }, function(){
+                $(this).css("background-color", "#a4b98c");
+              });
+              $("#googleContainer").hover(function(){
+                $(this).css("background-color", "rgb(189,205,182)");
+                }, function(){
+                $(this).css("background-color", "#a4b98c");
+              });
+              $("#youtubeContainer").hover(function(){
+                $(this).css("background-color", "rgb(189,205,182)");
+                }, function(){
+                $(this).css("background-color", "#a4b98c");
+              });
+            });
+            </script>
+        
+        <title >Pe&ntildea Samples</title>
+        <style>
+            #header-container{
+                text-align: center;
+                border-radius: 25px;
+                padding: 3vw;
+                margin: 2vw;
+                margin-top: 1vw;
+                justify-content:center;
+                background-image:linear-gradient(white, rgb(189,205,182),rgb(55,126,64) );
+            }
+            .topnav {
+                padding: .75vw;
+                border-radius: 25px;
+                overflow: hidden;
+                background-color: rgb(189,205,182);
+                }
+            .topnav a {
+                float: left;
+                color: rgb(22,74,33);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: rgb(22,74,33);
+                }
+            .topnav a.active {
+                background-color:rgb(55,126,64);
+                color: white;
+                }
+            .flex-container {
+                display:flex;
+                flex-wrap: wrap;
+                background-color: rgb(55,126,64);
+                border-radius: 25px;
+                padding: 3vw;
+                margin-bottom: 9vw;
+                margin: 2vw;
+                margin-top: 1vw;
+                justify-content: center;
+            }
+            .flex-container > div{
+                background-color: #a4b98c;
+                border-radius: 25px;
+                padding: 3vw;
+                margin: 3vw;
+                margin-top: 1vw;
+                font-size: 2vw; 
+                color:rgb(22,74,33);
+                text-align: center;
+                width: 30vw;
+            }
+            #bio{
+                font-size: 2vw; 
+                color:rgb(22,74,33);
+            }
+            body{
+                  background-color: rgb(55,126,64);
+                  background-image:url(https://previews.123rf.com/images/exoticvector/exoticvector1807/exoticvector180700925/115070598-palm-monstera-seamless-pattern-white-green-tropical-summer-background-beach-jungle-leaves-for-swimwe.jpg);
+                  background-repeat: repeat;
+                  background-size: 20vw;
+              }
+
+            h1{
+                font-family: 'Zen Dots', monospace;
+                font-size: 3.5vw; 
+                text-align: center;
+                font-weight: 600%;
+                text-shadow: 0.75vw 0.75vw #a4b98c;
+                color:rgb(22,74,33);
+            }
+            main{
+                justify-content: center;
+                height: 1000px;
+            }
+            footer {
+                
+            text-align: center;
+            padding: .25vw;
+            margin: 1vw;
+            background-color: rgb(154,195,165);
+            color:rgb(55,126,64);
+            border-radius: 25px;
+            position: fixed;
+            width: 96vw;
+            bottom: 0;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <nav class="topnav" style="border:double;border-color: rgb(22,74,33);border-width:.5vw">
+            <a class="active" href="#home">Home</a>
+            <a href="news.html">News</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <main>
+            <div id="header-container">
+                <h1>Jaymi Pe&ntildea <br> Web Development Examples</h1>
+                <p id="bio">Examples of Front, Back and Full-Stack Development</p>
+                <button type="button" onclick="myFunction()">Honestly</button>
+            </div>
+            <div class="flex-container">
+                <div id="googleContainer" hidden><img src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" alt="Google Icon" style="width:27vw;box-shadow: 1.5vw 2.5vw  rgb(55,126,64);">
+                    <br><br>I did NOT make <a href="https://www.google.com/" target="_blank">Google</a> 
+                </div>
+                <div id="youtubeContainer" hidden><img src="https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" alt="Youtube Icon" style="width:27vw;box-shadow: 1.5vw 2.5vw rgb(55,126,64);">
+                    <br><br>I did NOT make <a href="https://www.youtube.com/" target="_blank">Youtube</a> 
+                </div>
+                <div id="twitterContainer" hidden><img src="https://pbs.twimg.com/profile_images/1488548719062654976/u6qfBBkF_400x400.jpg" alt="Twitter Icon" style="width:27vw;box-shadow: 1.5vw 2.5vw rgb(55,126,64);">
+                    <br><br>I did NOT make <a href="https://www.Twitter.com/" target="_blank">Twitter</a> 
+                </div>
+                <div id="instagramContainer" hidden><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" alt="Twitter Icon" style="width:27vw;box-shadow: 1.5vw 2.5vw rgb(55,126,64);">
+                    <br><br>I did NOT make <a href="https://www.Instagram.com/" target="_blank">Instagram</a> 
+                </div>
+            </div>
+            <div style="padding:3vw ;"></div>
+        </main>
+
+        <footer>
+            <p>Made with HTML and CSS by Jaymi Pe&ntildea<br>
+                <a href="contact.html">Get in Contact</a></p>
+        </footer>
+
+        <script>
+            function myFunction() {
+                const theColor= "white"
+            document.getElementById("bio").innerHTML = "(This Page Doesn't really have any Examples :P)";
+            const body = document.getElementById("header-container")
+            body.style.backgroundImage = "url('https://cdn.media.amplience.net/i/partycity/P941127_01?$large$&fmt=auto&qlt=default')"
+        }
+        </script>
+
+
+    </body>
+</html>
